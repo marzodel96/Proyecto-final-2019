@@ -1,0 +1,1 @@
+Reconocimiento de vehículos mediante streaming de videos para su contabilización y clasificación en tiempo real
