@@ -1,5 +1,21 @@
 ## Reconocimiento de vehículos mediante streaming de videos para su contabilización y clasificación en tiempo real
 
+__HARDWARE__
+- Notebook: Asus VivoBook S430FN
+- Procesador: Intel Core i5-8265U (4 núcleos, 8 hilos, 1600 MHz - 3900 MHz) 8va generación
+- Memoria RAM: 
+    - 4 GB DDR4 (2400 MHz) {Incorporada}
+    - 4 GB DDR4 (2400 MHz) {Aparte}
+- Pantalla: LED 14.0" (1920x1080) / 60 Hz
+- Almacenamiento: 256 GB SSD
+- Tarjetas de video:
+    - NVIDIA GeForce MX150 (2 GB)
+    - Intel UHD Graphics 620 (Integrada)
+- Sistema Operativo:
+    - Windows 10 (primaria)
+    - Linux Ubuntu (partición)
+
+
 __INSTALACIONES__
 - Windows 10
 - Python 3.7.2
@@ -33,7 +49,7 @@ __PREVIO__
 - Ruta con dataset de automóviles: C:\darknet\build\darknet\x64\data\obj -> un total de 158 imágenes con su respectivo bounding boxes para para imagen en formato .txt
     - Software utilizado para realizar bouding boxes: LabelImg en su formato binario para Windows (v1.8.0) http://tzutalin.github.io/labelImg/ 
     - Formato .txt utilizado es requerido para entrenar nuevos modelos en API YOLO.
-    - Labels: acc (autos, camionetas, camiones) – taxibus – bus.
+    - Labels: automovil – taxibus – bus.
 - Dataset es sacado de UOCT en su cuenta Twitter y recopilando imágenes en Google. El 80% de las imágenes que sirven de entrenamiento son de las calles de Concepción.
 - Videos para ser utilizados como prueba son sacados de la página oficial de UOCT a través del caché del navegador. Duración de videos: 30 segundos aproximadamente.
 
@@ -50,3 +66,8 @@ __PREVIO ENTRENAMIENTO YOLO__
 
 __PRUEBAS CON MODELO CREADO__
 - Para hacer las pruebas pertinentes con el modelo creado en base a las imágenes de automóviles y taxibuses, se utiliza el comando darknet.exe detector demo data/obj.data yolov3-tiny-obj.cfg yolov3-tiny-obj_2000.weights -i 0 <archivo-de-video>.mp4 en la ruta C:\darknet\build\darknet\x64
+
+__RESULTADO FINAL__
+- Config.: configuraciones-iteracion_6000.cgf
+- Modelo: modelo-iteracion_6000.weights (Resultado entrenamiento)
+    - Duración de 4 hrs. aproximadamente
