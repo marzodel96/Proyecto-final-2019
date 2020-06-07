@@ -71,3 +71,4 @@ __RESULTADO FINAL__
 - Config.: configuraciones-iteracion_6000.cgf
 - Modelo: modelo-iteracion_6000.weights (Resultado entrenamiento)
     - Duración de 4 hrs. aproximadamente
+- Se realizaron grabaciones propias desde diversas pasarelas buscando alturas óptimas que permitieran el reconocimiento a distancia de diversos vehículos
