@@ -7,4 +7,4 @@ Reconocimiento de veh√≠culos mediante streaming de videos para su contabilizaci√
 
 
 - Modo de uso:
-    ~ python __init__.py
+    python __init__.py
