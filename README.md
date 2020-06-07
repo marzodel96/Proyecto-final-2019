@@ -1,6 +1,6 @@
 ## Reconocimiento de vehículos mediante streaming de videos para su contabilización y clasificación en tiempo real
 
-1. INSTALACIONES
+__INSTALACIONES__
 - Windows 10
 - Python 3.7.2
 - Visual Studio Community 2015 y 2017
@@ -11,7 +11,7 @@
 - OpenCV 3.4.5 desde página https://opencv.org/releases/ -> extraer en C:\ y guardarlo en una subcarpeta llamada opencv_3.0 para que el proyecto en VS pueda tomar las rutas indicadas de manera correcta.
 
 
-2. VARIABLES DE ENTORNO QUE SE DEBEN AGREGAR
+__VARIABLES DE ENTORNO QUE SE DEBEN AGREGAR__
 - C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin
 - C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\libnvvp
 - C:\darknet
@@ -19,7 +19,7 @@
 - C:\opencv_3.0\opencv\build\include
 
 
-3. CÓMO COMPILAR EN WINDOWS
+__CÓMO COMPILAR EN WINDOWS__
 - Una vez instalado todo (incluyendo variables de entorno) se procede a abrir el archivo en la ruta build\darknet\darknet.sln con VS2017, cambiando a x64 y Release
 - Compilar -> Compilar darknet
 - Luego de haber compilado exitosamente el proyecto, se creará en la ruta build\darknet\x64 y archivo ejecutable ‘darknet.exe’
@@ -27,7 +27,7 @@
 - Descargar cuDNN para CUDA v10 y copiar el archivo ‘cudnn64_7.dll’ a la ruta C:\darknet\build\darknet\x64 cerca de ‘darknet.exe’
 
 
-4. PREVIO
+__PREVIO__
 - Ruta para darknet: C:\darknet
 - Ruta para realizar entrenamientos y testeo de datos con modelo obtenido: C:\darknet\build\darknet\x64 -> cmd en ruta
 - Ruta con dataset de automóviles: C:\darknet\build\darknet\x64\data\obj -> un total de 158 imágenes con su respectivo bounding boxes para para imagen en formato .txt
@@ -38,7 +38,7 @@
 - Videos para ser utilizados como prueba son sacados de la página oficial de UOCT a través del caché del navegador. Duración de videos: 30 segundos aproximadamente.
 
 
-5. PREVIO ENTRENAMIENTO YOLO
+__PREVIO ENTRENAMIENTO YOLO__
 - Para el entrenamiento de un nuevo modelo utilizando dataset propio se realizó lo siguiente:
     - https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects -> “How to train tiny-yolo (to detect your custom objects)”
     - Se utilizaron además los mismos nombres estipulados en el enlace para el ejemplo.
@@ -48,5 +48,5 @@
 - Hay que considerar que, para obtener un buen modelo entrenado, se deben tener 2.000 iteraciones para cada clase pero que no sea menos de 4.000. Pero para obtener un modelo confiable, se debe llegar como mínimo a las 9.000 iteraciones (sugerencia de API YOLO).
 
 
-6. PRUEBAS CON MODELO CREADO
+__PRUEBAS CON MODELO CREADO__
 - Para hacer las pruebas pertinentes con el modelo creado en base a las imágenes de automóviles y taxibuses, se utiliza el comando darknet.exe detector demo data/obj.data yolov3-tiny-obj.cfg yolov3-tiny-obj_2000.weights -i 0 <archivo-de-video>.mp4 en la ruta C:\darknet\build\darknet\x64
