@@ -1,10 +1,10 @@
 Reconocimiento de vehículos mediante streaming de videos para su contabilización y clasificación en tiempo real
 
-# Software utilizado:
+- Software utilizado:
 
 
-# Versiones utilizadas
+- Versiones utilizadas
 
 
-# Modo de uso:
->> python __init__.py
+- Modo de uso:
+    ~ python __init__.py
