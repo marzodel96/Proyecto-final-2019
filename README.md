@@ -15,6 +15,9 @@ __HARDWARE__
     - Windows 10 (primaria)
     - Linux Ubuntu (partición)
 
+__SOFTWARE__
+- Se utilizó la aplicación gratuita __IP Webcam__ (disponible en Google Play) para la transmisión de videos en tiempo real, a través del smartphone, la cual al iniciar otorga una IP que se debe entregar al código de reconocimiento para que pueda entregar la visualización de los diversos vehículos que posiblemente sean detectados dentro del proyecto.
+
 
 __INSTALACIONES__
 - Windows 10
