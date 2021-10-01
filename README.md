@@ -7,8 +7,7 @@ __HARDWARE__
 - Notebook: Asus VivoBook S430FN
 - Procesador: Intel Core i5-8265U (4 núcleos, 8 hilos, 1600 MHz - 3900 MHz) 8va generación
 - Memoria RAM: 
-    - 4 GB DDR4 (2400 MHz) {Incorporada}
-    - 4 GB DDR4 (2400 MHz) {Aparte}
+    - 8 GB DDR4 (2400 MHz)
 - Pantalla: LED 14.0" (1920x1080) / 60 Hz
 - Almacenamiento: 256 GB SSD
 - Tarjetas de video:
