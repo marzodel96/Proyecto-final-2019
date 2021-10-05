@@ -5,17 +5,16 @@ __DEMOSTRACIÓN__
 
 __HARDWARE__
 - Notebook: Asus VivoBook S430FN
-- Procesador: Intel Core i5-8265U (4 núcleos, 8 hilos, 1600 MHz - 3900 MHz) 8va generación
+- Procesador: Intel Core i5-8265U (4 núcleos, 8 hilos, 1600 MHz - 3900 MHz) 8th Gen
 - Memoria RAM: 
     - 8 GB DDR4 (2400 MHz)
 - Pantalla: LED 14.0" (1920x1080) / 60 Hz
 - Almacenamiento: 256 GB SSD
 - Tarjetas de video:
-    - NVIDIA GeForce MX150 (2 GB)
+    - NVIDIA GeForce MX150 2 GB (Dedicada)
     - Intel UHD Graphics 620 (Integrada)
 - Sistema Operativo:
     - Windows 10 (primaria)
-    - Linux Ubuntu (partición)
 
 __SOFTWARE__
 - Se utilizó la aplicación gratuita __IP Webcam__ (disponible en Google Play) para la transmisión de videos en tiempo real, a través del smartphone, la cual al iniciar otorga una IP que se debe entregar al código de reconocimiento para que pueda entregar la visualización de los diversos vehículos que posiblemente sean detectados dentro del proyecto.
